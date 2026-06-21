@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiktok-downloader-py"
+version = "1.0.0"
+description = "Cross-platform Python port of Jettcodey's TikTok Downloader CLI"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["requests>=2.31"]
+
+[project.optional-dependencies]
+scrape = ["playwright>=1.40"]
+
+[project.scripts]
+ttd = "tiktok_downloader.cli:main"
+
+[tool.setuptools]
+packages = ["tiktok_downloader"]
