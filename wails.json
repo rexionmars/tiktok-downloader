@@ -1,0 +1,19 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "TikTokDownloaderDesktop",
+  "outputfilename": "TikTokDownloaderDesktop",
+  "frontend:install": "pnpm install",
+  "frontend:build": "pnpm run build",
+  "frontend:dev:watcher": "pnpm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "rexionmars"
+  },
+  "info": {
+    "productName": "TikTok Downloader",
+    "productVersion": "1.0.0"
+  },
+  "wailsjsdir": "./frontend",
+  "assetdir": "./frontend/dist",
+  "reloaddirs": "./frontend/src"
+}

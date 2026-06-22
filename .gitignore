@@ -1,31 +1,18 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-*.egg
-build/
-dist/
-.eggs/
+# Go
+/build/bin/
+*.test
+*.out
 
-# Virtual environments
-.venv/
-venv/
-env/
+# Wails generated bindings are committed for type-checking, but build output is not
+frontend/dist/
 
-# Downloaded content / runtime output
+# Node
+frontend/node_modules/
+
+# Downloaded content
 TikTokDownloads/
-*_combined_links.txt
-*_index.txt
-
-# Tooling
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
 
 # OS / editor
 .DS_Store
 .idea/
 .vscode/
-*.swp
